@@ -1,0 +1,38 @@
+.bor {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300px;
+  font-size: 20px;
+  line-height: 30px;
+  font-style: italic;
+}
+.mor {
+  text-decoration: line-through;
+}
+.wop {
+  text-align: center;
+  text-transform: uppercase;
+}
+.rok {
+  word-spacing: 30px;
+  color: rgb(58, 11, 101);
+  text-decoration:overline wavy;
+  text-shadow: 1px 1px 2px #420f4f;
+}
+.toy {
+  letter-spacing: 5px;
+  text-decoration: underline double;
+}
+.tor {
+  color: rgb(39, 147, 147);
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 2px 3px 3px #266d1b;
+  text-decoration: underline overline wavy;
+  line-height: 30px;
+  text-transform: capitalize;
+  font-style: normal;
+}
+.ler {
+  color: rgb(43, 137, 219)
+}
