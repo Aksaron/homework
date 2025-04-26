@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+.tor {
+  background: #11bfb9;
+  overflow: auto;
+  height: 550px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border: solid #000000;
+}
+.block {
+  background: #906abb;
+  box-shadow: inset 0px 0px 10px #000000;
+
+  display: inline-block;
+  border-radius: 40px;
+  width: 300px;
+  height: 200px;
+  padding: 15px;
+  margin: 10px;
+}
