@@ -34,9 +34,9 @@ function calculator(a, b, operator) {
 }
 
 let result1 = calculator(5, 3, '-');
-let result2 = calculator(5, 4, '+');
+let result2 = calculator(9, 3, '+');
 let result3 = calculator(6, 7, '*');
-let result4 = calculator(8, 2, '/');
+let result4 = calculator(15, 3, '/');
 
 console.log(result1);
 console.log(result2);
