@@ -124,22 +124,22 @@
       prevEl: '.gallery__prev',
     },
 
-      breakpoints: {
-        601: {
-          slidesPerView: 3,
-        },
-        801: {
-          spaceBetween: 32,
-        },
-        1101: {
-          slidesPerView: 4,
-        }
+    breakpoints: {
+      601: {
+        slidesPerView: 3,
+      },
+      801: {
+        spaceBetween: 32,
+      },
+      1101: {
+        slidesPerView: 4,
       }
+    }
   });
 
-  /*================================= Слайдер-отзывы =====================*/
+  /*=================================Слайдер-отзывы=====================*/
 
-new Swiper('.testimonials__slider', {
+  new Swiper('.testimonials__slider', {
 
     spaceBetween: 0,
     slidesPerView: 1,
@@ -156,14 +156,20 @@ new Swiper('.testimonials__slider', {
     },
 
     breakpoints: {
-        901: {
-          slidesPerView: 1.5,
-        },
-        1201: {
-          slidesPerView: 2.1,
-        }
+      901: {
+        slidesPerView: 1.5,
+      },
+      1201: {
+        slidesPerView: 2.1,
       }
+    }
   });
+
+  /*=================================Маска дял телефона===================*/
+
+  const telInputs = document.querySelector('input[type="tel"]')
+  const im = new Inputmask('+7 (999) 999-99-99')
+  im.mask(telInputs)
 
 })()
 
