@@ -6,8 +6,6 @@
 @import "footer.css";
 /* ===========================main================== */
 
-.about {}
-
 .about__inner {
   display: grid;
   grid-template-columns: 1fr 1.11fr;
@@ -71,17 +69,9 @@
   opacity: 1;
 }
 
-.about__body {}
-
 .about__heading {
   margin-bottom: 30px;
 }
-
-.about__title {}
-
-.about__title-text {}
-
-.about__text {}
 
 .about__grid {
   display: grid;
@@ -109,12 +99,7 @@
   justify-content: center;
 }
 
-.about__grid-text {}
-
 /* =========================================== */
-
-
-.program {}
 
 .program__top {
   display: flex;
@@ -124,13 +109,9 @@
   gap: 30px 15px;
 }
 
-.program__heading {}
-
 .program__title {
   margin-bottom: 20px;
 }
-
-.program___text {}
 
 .program__tab-content {
   margin-bottom: 40px;
@@ -189,8 +170,6 @@
   margin-left: 35%;
 }
 
-.program__price {}
-
 .program__price-text {
   line-height: 1.6;
   text-transform: uppercase;
@@ -223,7 +202,6 @@
   gap: 26px;
 }
 
-.tab-controls__item {}
 
 .tab-controls__link {
   display: block;
@@ -252,8 +230,6 @@
   display: block;
 }
 
-.accordion-list {}
-
 .accordion-list__item {
   border: 1px solid var(--accent-color);
   border-radius: var(--border-radius);
@@ -264,8 +240,6 @@
 .accordion-list__item:last-child {
   margin-bottom: 0;
 }
-
-.accordion-list__item--opened {}
 
 .accordion-list__control {
   padding: 41px 30px;
@@ -287,8 +261,6 @@
 .accordion-list__item--opened .accordion-list__control {
   padding-bottom: 20px;
 }
-
-.accordion-list__control-title {}
 
 .accordion-list__control-icon {
   width: 36px;
@@ -355,8 +327,6 @@
   margin-bottom: 20px;
 }
 
-.accordion-content__list {}
-
 .accordion-content__item {
   margin-bottom: 20px;
   display: flex;
@@ -383,9 +353,6 @@
 }
 
 /* ================================================== */
-
-
-.gallery {}
 
 .gallery__inner {
   display: grid;
@@ -417,8 +384,6 @@
 .gallery__title {
   margin-bottom: 20px;
 }
-
-.gallery__text {}
 
 .gallery__nav {
   display: flex;
@@ -483,8 +448,6 @@
   fill: var(--general-bg);
 }
 
-.gallery__prev {}
-
 .gallery__pagination {
   display: flex;
   position: absolute;
@@ -494,12 +457,6 @@
   width: auto;
   transform: translate(-50%, -50%);
 }
-
-.gallery__next {}
-
-.gallery__slider {}
-
-.gallery__wrapper {}
 
 .gallery__slide {
   border-radius: var(--border-radius);
@@ -511,8 +468,6 @@
 }
 
 /* ================================================== */
-
-.testimonials {}
 
 .testimonials__inner {
   display: flex;
@@ -529,8 +484,6 @@
 .testimonials__title {
   margin-bottom: 20px;
 }
-
-.testimonials__text {}
 
 .testimonials__nav {
   display: flex;
@@ -655,8 +608,6 @@
   color: var(--accent-color-2);
 }
 
-.testimonials__quote {}
-
 .testimonials__quote span {
   display: block;
 
@@ -725,8 +676,6 @@
 .contact__text {
   margin-bottom: 40px;
 }
-
-.contact__form {}
 
 .contact__label {
   margin-bottom: 10px;
@@ -988,6 +937,10 @@
 }
 
 @media (max-width: 800px) {
+
+html {
+  scroll-padding-top: 50px;
+}
 
   .hero__content {
     max-width: none;

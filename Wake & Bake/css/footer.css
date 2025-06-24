@@ -68,8 +68,6 @@
   opacity: 1;
 }
 
-.footer__contact-list {}
-
 .footer__contact-item {
   margin-bottom: 10px;
 }
@@ -107,8 +105,6 @@
   display: flex;
   gap: 15px;
 }
-
-.socials__item {}
 
 .socials__link path {
   transition: var(--transition);
