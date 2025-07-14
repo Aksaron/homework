@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'Inter 18pt';
     src: local('Inter 18pt Regular'), local('Inter18pt-Regular'),
-        url('../fonts/Inter18pt-Regular.woff2') format('woff2'),
         url('../fonts/Inter18pt-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
