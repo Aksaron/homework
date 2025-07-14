@@ -1,0 +1,122 @@
+:root {
+  --general-text: #000;
+  --general-bg: #ffffff;
+  --general-bg-2: #f8f9fa;
+  --general-bg-3: #DCE5E2;
+  --transition: all .4s;
+  ;
+}
+
+.body {
+  font-family: "Inter", "Arial", sans-serif;
+  background: var(--general-bg);
+  color: var(--general-text);
+  line-height: 1.2;
+}
+
+.body--opened-menu {
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1326px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.button {
+  padding: 14px 52px;
+  background: transparent;
+  border: 1px solid var(--general-text);
+  border-radius: 200px;
+  font-size: 18px;
+  cursor: pointer;
+  max-width: 190px;
+  width: 100%;
+
+  transition: var(--transition);
+}
+
+.button:hover {
+  background: var(--general-text);
+  color: var(--general-bg);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background: #00000071;
+  padding: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all .6s;
+}
+
+.body--opened-modal .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__window {
+  background: var(--general-bg);
+  border-radius: var(--border-radius);
+  padding: 0 60px 60px;
+  position: relative;
+  max-width: 428px;
+}
+
+.modal__cancel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modal__cancel path,
+.modal__cancel rect {
+  transition: var(--transition);
+}
+
+.modal__cancel:hover path,
+.modal__cancel:hover rect {
+  stroke: var(--input-color);
+}
+
+.modal__img {
+  margin: -65px 0 15px 13px;
+  max-width: 100%;
+}
+
+.modal__title {
+  font-family: 'Gabriola';
+  font-size: 42px;
+  line-height: .9;
+  color: var(--accent-text);
+  margin-bottom: 10px;
+}
+
+.modal__text {
+  margin-bottom: 30px;
+}
+
+.modal__form-label {
+  margin-bottom: 10px;
+}
