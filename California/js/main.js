@@ -28,34 +28,29 @@ const dropdownMenu = document.getElementById('dropdown-menu');
 dropdownButton.addEventListener('click', () => {
     dropdownMenu.classList.toggle('active');
 });
-/////////////////////// Burger drop menu
-const dropBurgButton = document.getElementById('dropBurg__btn');
-const dropBurgMenu = document.getElementById('dropBurg-menu');
-
-// Добавляем обработчик события на кнопку
-dropBurgButton.addEventListener('click', () => {
-    dropBurgMenu.classList.toggle('opened');
-    
-});
 
   /* =================Бургер===================== */
-  document.addEventListener('click', burgerInit)
+  document.addEventListener('click', burgerInit);
+
+function burgerInit(e) {
+  const burgerIcon = e.target.closest('.burger-icon')
+  const burgerNavLink = e.target.closest('.burger-nav__link')
   
-  function burgerInit(e) {
-    
-    const burgerIcon = e.target.closest('.burger-icon')
-    const burgerNavLink = e.target.closest('.nav__link')
-    
-    if (!burgerIcon && !burgerNavLink) return
-    if (document.documentElement.clientWidth > 900) return
-    
-    if (!document.body.classList.contains('body--opened-menu')) {
-      document.body.classList.add('body--opened-menu')
-    } else {
-      document.body.classList.remove('body--opened-menu')
-    }
-    
+  if (!burgerIcon && !burgerNavLink) return
+  if (document.documentElement.clientWidth > 900) return
+  
+if (burgerNavLink && burgerNavLink.hasAttribute('data-dropdown-link')) {
+    // Это клик по SOLUTIONS – не закрывать бургер
+    return
   }
+
+  if (!document.body.classList.contains('body--opened-menu')) {
+    document.body.classList.add('body--opened-menu')
+  } else {
+    document.body.classList.remove('body--opened-menu')
+  }
+}
+
   /* =====================Модалка========================== */
   const modal = document.querySelector('.modal')
   const modalButton = document.querySelector('.about__img-button')

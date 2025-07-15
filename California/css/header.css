@@ -1,12 +1,7 @@
-.header {}
-
-.nav {}
-
 
 .header__top {
   padding-top: 19px;
 }
-
 
 .header__top-inner {
   display: flex;
@@ -23,7 +18,6 @@
   width: 100%;
 }
 
-
 .nav__list {
   display: flex;
   font-size: 14px;
@@ -34,7 +28,6 @@
 .nav__item:nth-child(5) {
   margin-left: 305px;
 }
-
 
 .nav__link {
   display: block;
@@ -79,9 +72,7 @@
   stroke: var(--general-text);
 }
 
-
-
-
+/* ============================================== */
 .dropdown__btn {
   cursor: pointer;
 }
@@ -145,17 +136,7 @@
   z-index: 2;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/* ================================ */
 
 .burger-icon {
   display: none;
@@ -211,18 +192,14 @@
   transform: rotate(-45deg);
 }
 
-
 /* =====================слайдер=================== */
 .hero {
   margin-top: 40px;
 }
 
 .hero__swiper {
-
   border-radius: 32px;
 }
-
-.hero__wrapper {}
 
 .hero__slide-1 {
   background: var(--general-bg-3);
@@ -256,8 +233,6 @@
 .hero__slide-text {
   margin: 30px 0;
 }
-
-
 
 .hero__slider-img {
   margin-right: 35px;
