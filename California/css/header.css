@@ -80,13 +80,15 @@
 .dropdown-content {
   display: block;
   position: absolute;
-  background: #fff;
+  background: #ffffff;
   min-width: 130px;
   box-shadow: 0px 8px 16px -8px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
   z-index: 1;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
+
   transition: var(--transition);
 }
 
@@ -94,19 +96,20 @@
 .dropBurg-content li {
   padding: 16px 16px;
   list-style: none;
+  border-radius: 20px;
 }
 
 .dropdown-content li a,
 .dropBurg-content li a {
   text-decoration: none;
-  color: black;
+  color: var(--general-text);
   display: block;
   position: relative;
 }
 
 .dropdown-content li:hover {
   text-decoration: none;
-  color: black;
+  color: var(--general-text);
   display: block;
   background: var(--general-bg-3);
 }
@@ -252,11 +255,11 @@
 }
 
 .swiper-pagination-bullet-active {
-  background: black;
+  background: var(--general-text);
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-size: 28px;
-  color: #000;
+  color: var(--general-text);
 }

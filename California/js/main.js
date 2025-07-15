@@ -1,7 +1,5 @@
 (function () {
 
-
-  
   const swiper = new Swiper('.hero__swiper', {
     
     loop: true,
@@ -14,14 +12,13 @@
       nextEl: '.hero__next',
       prevEl: '.hero__prev',
     },
-    /* autoplay: {
+    autoplay: {
       delay: 3000,
       disableOnInteraction: false,
     },
-    speed: 1500, */
+    speed: 1500,
   });
-  
-  // ////////////////////////////// Drop Nav Menu
+  /* ================ Дроп===================== */
 const dropdownButton = document.getElementById('dropdown__btn');
 const dropdownMenu = document.getElementById('dropdown-menu');
 
@@ -40,7 +37,6 @@ function burgerInit(e) {
   if (document.documentElement.clientWidth > 900) return
   
 if (burgerNavLink && burgerNavLink.hasAttribute('data-dropdown-link')) {
-    // Это клик по SOLUTIONS – не закрывать бургер
     return
   }
 

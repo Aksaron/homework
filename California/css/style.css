@@ -43,9 +43,8 @@
 
 .gallery__item {
   display: flex;
-  background: #ffffff;
+  background: var(--general-bg);
   box-shadow: 2px -1px 39px -19px #00000041;
-  font-family: var(--font-main);
   font-size: 15px;
   justify-self: end;
   width: 100%;
@@ -351,7 +350,6 @@
 .ideas__link:hover {
   opacity: 0.7;
 }
-
 
 /* ================================================================= */
 .search {
