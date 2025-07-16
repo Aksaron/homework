@@ -77,7 +77,6 @@
 
 .modal__window {
   background: var(--general-bg);
-  border-radius: var(--border-radius);
   padding: 0 60px 60px;
   position: relative;
   max-width: 428px;
@@ -96,7 +95,7 @@
 
 .modal__cancel:hover path,
 .modal__cancel:hover rect {
-  stroke: var(--input-color);
+  stroke: var(--general-text);
 }
 
 .modal__img {
@@ -108,7 +107,7 @@
   font-family: 'Gabriola';
   font-size: 42px;
   line-height: .9;
-  color: var(--accent-text);
+  color: var(--general-text);
   margin-bottom: 10px;
 }
 
