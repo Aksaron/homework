@@ -42,7 +42,7 @@
 .offers__item {
   display: flex;
   background: var(--general-bg);
-  box-shadow: 2px -1px 39px -19px #00000041;
+  box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
   font-size: 15px;
   justify-self: end;
   width: 100%;
@@ -59,10 +59,6 @@
   width: 100%;
 }
 
-.phones {
-  align-items: center;
-}
-
 .offers__item:nth-child(1) {
   grid-row: 1 / 2;
   grid-column: 1 / 3;
@@ -70,11 +66,6 @@
 
 .offers__item:nth-child(1) img {
   padding: 0 42px;
-}
-
-.offers__item:nth-child(1) {
-  grid-row: 1 / 2;
-  grid-column: 1 / 3;
 }
 
 .offers__item-title {
@@ -94,7 +85,9 @@
   flex-direction: column;
   justify-content: center;
   text-align: end;
-  padding-right: 40px;
+  padding-right: 10px;
+  max-width: 250px;
+  margin-left: auto;
 }
 
 .offers__item:nth-child(2) {
@@ -114,8 +107,8 @@
 .offers__item:nth-child(2) img {
   max-height: 270px;
   height: 100%;
+  padding-left: 30px;
 }
-
 
 .offers__item:nth-child(3) {
   grid-column: 3 / 4;
@@ -130,12 +123,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: auto;
 }
 
 .offers__item:nth-child(3) .offers__item-text,
 .offers__item:nth-child(4) .offers__item-text {
   padding: 42px 0;
 }
+
 
 .offers__item:nth-child(4) {
   grid-column: 4 / 5;
@@ -484,7 +479,7 @@
 /* ===============================media=========================== */
 /* =============================================================== */
 
-@media(max-width: 1100px) {
+@media (max-width: 1100px) {
 
   .hero__slide-inner {
     gap: 50px;
@@ -514,6 +509,10 @@
     grid-column: 1 / 3;
     text-align: center;
   }
+
+  .offers__item:nth-child(2) img {
+    padding-left: 0;
+}
 
 }
 
@@ -583,7 +582,7 @@
 @media (max-width: 800px) {
 
   .offers__item-title {
-    font-size: 22px;
+    font-size: 21px;
   }
 
   .products__list {
@@ -603,7 +602,7 @@
   }
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
 
   .title {
     font-size: 34px;
@@ -612,7 +611,8 @@
   .hero__slider-img img {
     width: 100%;
   }
-/* ============================================== */
+
+  /* ============================================== */
   .offers {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: .1fr 1fr .1fr;
@@ -646,7 +646,8 @@
     align-items: start;
     height: 100%;
   }
-/* ====================================== */
+
+  /* ====================================== */
   .products__subtitle {
     margin-bottom: 20px;
   }
@@ -666,7 +667,8 @@
   .product-info__price {
     font-size: 2.8vw;
   }
-/* ============================================== */
+
+  /* ============================================== */
   .collections {
     padding-top: 20px;
   }
@@ -674,7 +676,8 @@
   .collections__subtitle {
     margin-bottom: 20px;
   }
-/* =============================================== */
+
+  /* =============================================== */
   .ideas__header {
     margin-bottom: 20px;
   }
@@ -686,7 +689,8 @@
   .ideas__list {
     gap: 20px;
   }
-/* ==================================================== */
+
+  /* ==================================================== */
   .search {
     padding-top: 20px;
   }
@@ -732,15 +736,18 @@
   .hero__slide-content {
     padding-top: 15px;
   }
-/* ====================================== */
+
+  /* ====================================== */
   .top {
     margin: 20px 0 30px 0;
   }
-/* ===================================== */
+
+  /* ===================================== */
   .products {
     padding-top: 10px;
   }
-/* ---------------------------------- */
+
+  /* ---------------------------------- */
   .ideas {
     padding-top: 10px;
   }
@@ -752,7 +759,8 @@
   .ideas__item {
     font-size: 16px;
   }
-/* ============================= */
+
+  /* ============================= */
   .subscribe__form {
     flex-direction: column;
     max-width: 90%;
